@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@css/mainMenu.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.AcceptRequest" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);">
+    <children>
+        <!-- Profile and Header Section -->
+        <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="30.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 4);">
+            <image>
+                <Image url="@images/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="userNameField" layoutX="100.0" layoutY="25.0" text="Username" style="-fx-text-fill: white; -fx-font-size: 18; -fx-font-family: 'System Bold';" />
+        <Label layoutX="100.0" layoutY="50.0" text="Online" textFill="#1f8103" style="-fx-font-size: 14; -fx-font-family: 'System Bold';" />
+
+        <!-- Table Section -->
+        <TableView fx:id="tableView" layoutX="50.0" layoutY="100.0" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: white; -fx-border-radius: 15; -fx-background-radius: 15;">
+            <columns>
+                <TableColumn fx:id="firstnameColumn" prefWidth="150.0" text="First Name" style="-fx-font-size: 14px; -fx-alignment: CENTER; -fx-text-fill: #555;" />
+                <TableColumn fx:id="lastnameColumn" prefWidth="150.0" text="Last Name" style="-fx-font-size: 14px; -fx-alignment: CENTER; -fx-text-fill: #555;" />
+                <TableColumn fx:id="dateColumn" prefWidth="200.0" text="Date Sent" style="-fx-font-size: 14px; -fx-alignment: CENTER; -fx-text-fill: #555;" />
+                <TableColumn fx:id="statusColumn" prefWidth="150.0" text="Status" style="-fx-font-size: 14px; -fx-alignment: CENTER; -fx-text-fill: #555;" />
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons -->
+        <HBox spacing="30.0" layoutX="230.0" layoutY="480.0">
+            <Button fx:id="acceptButton" mnemonicParsing="false" onAction="#handleAccept" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16px; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Accept" />
+            <Button fx:id="rejectButton" mnemonicParsing="false" onAction="#handleDecline" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16px; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Reject" />
+        </HBox>
+
+        <!-- Footer Notification -->
+        <Label fx:id="showMessage" layoutX="50.0" layoutY="550.0" textFill="white" style="-fx-font-size: 14px; -fx-font-family: 'System Bold';" />
+    </children>
+</AnchorPane>
