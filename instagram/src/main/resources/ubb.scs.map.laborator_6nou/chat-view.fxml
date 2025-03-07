@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane prefHeight="420.0" prefWidth="600.0" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.ChatView" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);">
+    <children>
+        <ListView fx:id="listView" layoutX="25.0" layoutY="23.0" prefHeight="312.0" prefWidth="354.0" />
+
+        <TextField fx:id="messageText" layoutX="25.0" layoutY="347.0" prefHeight="51.0" prefWidth="291.0" />
+
+        <!-- Set the send button to blue, and position it with margin -->
+        <Button fx:id="sendButton" mnemonicParsing="false" onAction="#handleSend" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16px; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Send" layoutX="25.0" layoutY="400.0"/>
+
+        <!-- Set the delete button to blue, and position it with margin -->
+        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16px; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Delete" layoutX="25.0" layoutY="455.0"/>
+
+        <!-- Set the reply button to blue, and position it with margin -->
+        <Button fx:id="replyButton" mnemonicParsing="false" onAction="#handleReply" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16px; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Reply" layoutX="25.0" layoutY="510.0"/>
+
+        <!-- Feedback label -->
+        <Label fx:id="feedbackLabel" layoutX="25.0" layoutY="555.0" text=""/>
+
+        <!-- Name label -->
+        <Label fx:id="nameLabel" layoutX="486.0" layoutY="26.0">
+            <font>
+                <Font name="Bodoni MT" size="29.0" />
+            </font>
+        </Label>
+
+        <!-- Image view (for user avatar, etc.) -->
+        <ImageView fitHeight="90.0" fitWidth="128.0" layoutX="391.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="381.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.RegisterView" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);" stylesheets="@css/register.css">
+    <children>
+        <GridPane layoutX="106.0" layoutY="109.0" prefHeight="178.0" prefWidth="234.0" style="-fx-background-color: rgba(255, 255, 255, 0.85); -fx-background-radius: 15; -fx-padding: 15;">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <TextField fx:id="emailText" GridPane.rowIndex="1" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ddd; -fx-padding: 5;">
+                    <font>
+                        <Font name="System Italic" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="firstnameText" GridPane.rowIndex="5" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ddd; -fx-padding: 5;" />
+                <TextField fx:id="lastnameText" GridPane.rowIndex="7" prefHeight="22.0" prefWidth="234.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ddd; -fx-padding: 5;" />
+                <Label text="Email:" style="-fx-text-fill: #333; -fx-font-size: 14;" />
+                <Label text="Password:" GridPane.rowIndex="2" style="-fx-text-fill: #333; -fx-font-size: 14;" />
+                <Label text="First name:" GridPane.rowIndex="4" style="-fx-text-fill: #333; -fx-font-size: 14;" />
+                <Label text="Last name:" GridPane.rowIndex="6" style="-fx-text-fill: #333; -fx-font-size: 14;" />
+                <PasswordField fx:id="passwordText" GridPane.rowIndex="3" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #ddd; -fx-padding: 5;" />
+            </children>
+        </GridPane>
+        <Label layoutX="140.0" layoutY="54.0" prefHeight="42.0" prefWidth="214.0" text="Registration" style="-fx-text-fill: white;">
+            <font>
+                <Font name="Calibri Italic" size="32.0" />
+            </font>
+        </Label>
+        <Button fx:id="registerButton" layoutX="139.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="42.0" prefWidth="173.0" text="Register" style="-fx-background-color: white; -fx-text-fill: black; -fx-font-size: 16; -fx-border-radius: 20; -fx-background-radius: 20;" />
+    </children>
+</AnchorPane>

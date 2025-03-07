@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="276.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="ubb.scs.map.laborator_6nou.controller.AccountSettings">
+    <children>
+        <TextField fx:id="firstNameField" layoutX="39.0" layoutY="31.0" prefHeight="26.0" prefWidth="203.0" />
+        <TextField fx:id="lastNameField" layoutX="38.0" layoutY="71.0" prefHeight="26.0" prefWidth="203.0" />
+        <TextField fx:id="emailField" layoutX="38.0" layoutY="112.0" prefHeight="26.0" prefWidth="203.0" />
+
+        <!-- New password field -->
+        <PasswordField fx:id="newPasswordField" layoutX="60.0" layoutY="160.0" promptText="Enter new password" />
+
+        <!-- Confirm password field -->
+        <PasswordField fx:id="confirmPasswordField" layoutX="60.0" layoutY="204.0" promptText="Confirm new password" />
+
+        <!-- Error message label -->
+        <Label fx:id="errorMessageLabel" layoutX="10" layoutY="230" text="" textFill="red" />
+
+        <!-- Save button -->
+        <Button layoutX="78.0" layoutY="237.0" onAction="#handleSave" text="Save" />
+
+        <!-- Cancel button -->
+        <Button layoutX="151.0" layoutY="237.0" onAction="#handleCancel" text="Cancel" />
+    </children>
+</AnchorPane>

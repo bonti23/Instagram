@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@css/login.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.LoginView">
+    <children>
+        <GridPane layoutX="168.0" layoutY="150.0" prefHeight="101.0" prefWidth="258.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="250.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="150.4" minHeight="10.0" prefHeight="42.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.4" minHeight="10.0" prefHeight="42.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.4" minHeight="10.0" prefHeight="42.400000000000006" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <!-- Updated Email Label to Email Address -->
+                <Label id="emailLabel" text="Email address" GridPane.rowIndex="0" />
+
+                <!-- Email TextField -->
+                <TextField fx:id="emailText" layoutX="281.0" layoutY="157.0" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" GridPane.rowIndex="1" />
+
+                <!-- Password Label -->
+                <Label id="passwordLabel" text="Password" GridPane.rowIndex="2" />
+
+                <!-- Password Field -->
+                <PasswordField fx:id="passwordText" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+
+        <!-- Login Button -->
+        <Button fx:id="loginButton" layoutX="168.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleLoginButton" prefHeight="30.0" prefWidth="123.0" text="Log In" />
+
+        <!-- Register Button -->
+        <Button fx:id="registerButton" layoutX="300.0" layoutY="270.0" mnemonicParsing="false" onAction="#handleRegisterButton" prefHeight="30.0" prefWidth="123.0" text="Sign Up" />
+
+        <!-- Error Message Label -->
+        <Label fx:id="errorMessage" layoutX="382.0" layoutY="319.0" prefHeight="18.0" prefWidth="211.0" textAlignment="RIGHT" textFill="RED">
+            <font>
+                <Font name="Century Gothic Bold" size="15.0" />
+            </font>
+        </Label>
+
+        <!-- Logo -->
+        <ImageView fx:id="yahooLogo" fitHeight="133.0" fitWidth="182.0" layoutX="206.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/Instagram_logo.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

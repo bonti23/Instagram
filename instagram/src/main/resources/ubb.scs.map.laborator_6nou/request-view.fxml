@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.laborator_6nou.controller.RequestView" style="-fx-background-color: linear-gradient(to bottom, #833ab4, #fd1d1d, #fcb045);" stylesheets="@css/register.css">
+    <children>
+        <!-- Title Label -->
+        <Label layoutX="200.0" layoutY="10.0" text="Add a New Friend" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <!-- Search Bar -->
+        <TextField fx:id="searchBar" layoutX="50.0" layoutY="50.0" prefHeight="30.0" prefWidth="400.0" promptText="Search by name..." />
+        <Button fx:id="searchButton" layoutX="460.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleSearchButton" text="Search" />
+
+        <!-- Results Table -->
+        <TableView fx:id="searchResults" layoutX="50.0" layoutY="100.0" prefHeight="200.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="firstNameColumn" prefWidth="250.0" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" prefWidth="250.0" text="Last Name" />
+            </columns>
+        </TableView>
+
+        <!-- Status Label -->
+        <Label fx:id="statusLabel" layoutX="50.0" layoutY="320.0" textFill="RED" />
+
+        <!-- Send Request Button -->
+        <Button fx:id="sendRequestButton" layoutX="200.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSendRequest" prefHeight="30.0" prefWidth="150.0" text="Send Friend Request" />
+    </children>
+</AnchorPane>
