@@ -36,7 +36,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException, SQLException {
         String username = "alexandrabontidean";
-        String password = "alexandramiha";
+        String password = "1234";
         String url = "jdbc:postgresql://localhost:5432/map";
         userRepository = new UserDBPagingRepository(url, username, password, new UserValidation());
         friendshipRepository = new FriendshipDBRepository(url, username, password, new FriendshipValidation());
